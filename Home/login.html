@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        .container {
+            background-color: #fff;
+            width: 90%; 
+            max-width: 400px;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-top: 5%;
+        }
+    
+        body {
+            background-color: #eee;
+            font-family: Arial, sans-serif;
+        }
+    
+        h1 {
+            color: #333;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+        }
+    
+        .form-group {
+            display: flex;
+            flex-direction: column; 
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        .form-group input {
+            margin: 5px 0;
+        }
+    
+        label {
+            margin-bottom: 5px;
+        }
+    
+        input {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+    
+        button,
+        a {
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+    
+        .buttons {
+            display: flex;
+            flex-direction: column; 
+            gap: 10px;
+        }
+    
+        .buttons a {
+            max-width: fit-content;
+            color: black;
+            text-decoration: none;
+        }
+    
+        .buttons a:hover {
+            background-color:#d83f3f;
+            color: #EFEFEF;
+        }
+
+        @media (min-width: 768px) {
+            .container {
+                width: 50%;
+            }
+    
+            .form-group {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+
+            .form-group input {
+                margin: 0 10px 0 0;
+            }
+    
+            .buttons {
+                flex-direction: row;
+                justify-content: flex-end;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <section>
+                <h1>Login</h1>
+                <form>
+                    <div class="form-group">
+                        <label for="E-mail">E-mail:</label>
+                        <input type="email" id="E-mail" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="Senha">Senha:</label>
+                        <input type="password" id="Senha" required>
+                    </div>
+                    <div class="buttons">
+                        <a href="./index.html">Entrar</a>
+                        <a href="./cadastro.html">Cadastrar</a>
+                        <a href="./index.html">Home</a>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </main>
+</body>
+
+</html>

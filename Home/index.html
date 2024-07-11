@@ -1,0 +1,126 @@
+<!-- Aluno: Gabriel Ferreira / Fiz um salvamento do form de cadastro dentro do LocalStorage, verificando se há aquele email cadastrado, das estruturas solicitadas utilizei o 
+for para percorrer o localStorage e if para verificar se o email atual existe no localstorage percorrido, caso passe, ele salva o arquivo -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receita</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <!-- Seção da Barra de Navegação -->
+        <section id="navbar-section">
+            <nav id="menu-h">
+                <ul>
+                    <li><a href="index.html" class="navbar-link"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="contato.html" class="navbar-link"><i class="fas fa-envelope"></i> Contato</a></li>
+                    <li><a href="sobre-nos.html" class="navbar-link"><i class="fas fa-info-circle"></i> Quem somos</a></li>                    
+                </ul>
+                <a class="entrar" href="./login.html"><i class="fas fa-sign-in-alt"></i> Entrar</a>
+            </nav>
+        </section>
+
+        <!-- Seção de Carrossel -->
+        <!-- Seção de Carrossel -->
+        <section>
+            <div class="carousel">
+                <div class="carousel-slides">
+                    <div class="slide-container" id="slideContainer">
+                        <div class="slide" style="background-image: url('./carrosel/doce.png')"></div>
+                        <div class="slide" style="background-image: url('./carrosel/Sucos.png')">
+                        </div>
+                        <div class="slide" style="background-image: url('./carrosel/salgados.png')"></div>
+                    </div>
+                </div>
+                <div class="carousel-controls">
+                    <div class="prev" id="prev">&#10094;</div>
+                    <div class="next" id="next">&#10095;</div>
+                </div>
+            </div>
+        </section>
+        <h1 id="Titulo">
+            Bem Vindo ao Receitinhas
+        </h1>
+    </header>
+    <section>
+        <div class="container-receitas">
+            <div class="receita">
+                <a href="./receitas/ReceitadeossobucoTradicional.html">
+                    <img src="./receitasImg/Receita de ossobuco Tradicional.jpeg" alt="Receita de ossobuco Tradicional">
+                </a>
+                <div class="descricao">Receita de ossobuco Tradicional</div>
+            </div>
+            <div class="receita">
+                <a href="./receitas/Omelhorassadodepanela.html">
+                    <img src="./receitasImg/O melhor assado de panela.jpeg" alt="O melhor assado de panela">
+                </a>
+                <div class="descricao">O melhor assado de panela</div>
+            </div>
+            <div class="receita">
+                <a href="./receitas/Picanhamaciaaomolho.html">
+                    <img src="receitasImg/Picanha macia ao molho.jpg" alt="Picanha macia ao molho">
+                </a>
+                <div class="descricao">Picanha macia ao molho</div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container-receitas">
+            <div class="receita">
+                <a href="./receitas/Brigadeirodeamendoimmuitogostoso.html">
+                    <img src="./receitasImg/Brigadeiro de amendoim muito gostoso.jpeg" alt="Brigadeiro de amendoim muito gostoso">
+                </a>
+                <div class="descricao">Brigadeiro de amendoim muito gostoso</div>
+            </div>
+            <div class="receita">
+                <a href="./receitas/Pudimsemovomuitosimplesefacil.html">
+                    <img src="./receitasImg/Pudim sem ovo muito simples e facil.jpg" alt="Pudim sem ovo muito simples e facil">
+                </a>
+                <div class="descricao">Pudim sem ovo muito simples e facil</div>
+            </div>
+            <div class="receita">
+                <a href="./receitas/Receitatortadelimãosupergostosa.html">
+                    <img src="receitasImg/Receita torta de limão super gostosa.jpg" alt="Receita torta de limão super gostosa">
+                </a>
+                <div class="descricao">Receita torta de limão super gostosa</div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container-receitas">
+            <div class="receita">
+                <a href="./receitas/Caipirinhadelimão.html">
+                    <img src="./receitasImg/Caipirinha de limão.webp" alt="Caipirinha de limão">
+                </a>
+                <div class="descricao">Caipirinha de limão</div>
+            </div>
+            <div class="receita">
+                <a href="./receitas/Drinkdemorangoespumante.html">
+                    <img src="./receitasImg/Drink de morango espumante.webp" alt="Drink de morango espumante">
+                </a>
+                <div class="descricao">Drink de morango espumante</div>
+            </div>
+            <div class="receita">
+                <a href="./receitas/BatidadeMaracuja.html">
+                    <img src="receitasImg/Batida de Maracuja.webp" alt="Batida de Maracuja">
+                </a>
+                <div class="descricao">Batida de Maracuja</div>
+            </div>
+        </div>
+    </section>
+</body>
+<footer>
+    <div class="footer-container">
+        <div class="footer-logo">Receitinhas</div>
+        <ul class="footer-links">
+            <li><a href="sobre-nos.html">Sobre Nós</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </div>
+</footer>
+</html>

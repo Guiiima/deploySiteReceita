@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <style>
+        .container {
+            background-color: #fff;
+            width: 80%;
+            margin: auto;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-top: 5%;
+        }
+
+        body {
+            background-color: #eee;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            color: #333;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 10px;
+        }
+
+        .form-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            font-weight: bold;
+        }
+
+        .form-group input {
+            margin-right: 50px;
+        }
+
+        label {
+            flex: 1;
+            margin-right: 20px;
+        }
+
+        input {
+            flex: 2;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            background-color: #ffffff;
+        }
+
+        button,
+        a {
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: flex-end;
+            gap: 10px;
+            margin-left: 70%;
+        }
+
+        .buttons a {
+            max-width: fit-content;
+            color: black;
+            text-decoration: none;
+        }
+
+        .buttons input {
+            border-color: #efefef;
+            border: none;
+            cursor: pointer;
+        }
+
+        .buttons a:hover {
+            background-color: #d83f3f;
+            color: #efefef;
+        }
+
+        .buttons input:hover {
+            background-color: #d83f3f;
+            color: #efefef;
+        }
+
+        .msg {
+            display: flex;
+            padding: 30px;
+            flex-direction: row;
+            text-align: center;
+            margin-left: 40%;
+            margin-right: 40%;
+            margin-top: 2%;
+            border-radius: 25px;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <section>
+                <h1>Cadastro de Usuário</h1>
+                <form id="cadastroForm">
+                    <div class="form-group">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="senha">Senha:</label>
+                        <input type="password" id="senha" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirmarSenha">Confirmar senha:</label>
+                        <input type="password" id="confirmarSenha" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefone">Telefone:</label>
+                        <input type="number" id="telefone">
+                    </div>
+                    <div class="buttons">
+                        <input type="reset" value="Limpar">
+                        <input type="submit" value="Cadastrar">
+                        <a href="./index.html">Home</a>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </main>
+    <div class="msg" id="mensagem"></div>
+    <script src="./cadastro.js"></script>
+</body>
+
+</html>

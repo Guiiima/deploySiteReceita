@@ -1,0 +1,149 @@
+body,
+ul,
+li,
+a {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Arial', sans-serif;
+}
+body{
+    background-color: #daceb76f;
+}
+
+h1{
+    color: 	#c72b5a;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+#navbar-section {
+    background-color: #F3E1CF;
+}
+.navbar-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-link i {
+    margin-right: 5px; /* Ajuste conforme necessário */
+}
+#menu-h {
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    height: 70px;
+}
+
+#menu-h ul {
+    display: flex;
+    align-items: center;
+}
+
+#menu-h ul li {
+    margin: 0 15px;
+}
+
+#menu-h ul li a {
+    color: #000000;
+    padding: 20px 25px;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+}
+
+#menu-h ul li a:hover {
+    background-color: #d83f3f;
+    color: #EFEFEF;
+}
+
+#menu-h ul li a:active {
+    background-color: #d83f3f;
+    color: #EFEFEF;
+}
+
+#menu-h .entrar {
+    padding: 20px 25px;
+    color: #000000;
+    transition: background-color 0.3s;
+    border-radius: 5px;
+}
+
+#menu-h .entrar:hover {
+    background-color: #d83f3f;
+    color: #EFEFEF;
+}
+
+#menu-h .entrar:active {
+    background-color: #d83f3f;
+    color: #EFEFEF;
+}
+
+#menu-h a i {
+    margin-right: 5px;
+}
+
+.receita {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    text-align: center;
+}
+
+section {
+    font-family: 'Arial', sans-serif;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section p:first-child {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    color: #555;
+}
+
+section p:first-child strong {
+    display: block;
+    margin-top: 10px;
+    color: #2a2a2a;
+}
+
+section p:nth-child(2), section p:nth-child(4) {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    font-weight: bold;
+    border-bottom: 2px solid #c72b5a;
+    padding-bottom: 5px;
+}
+
+section ul {
+    margin-bottom: 20px;
+    color: #555;
+}
+
+section ul li {
+    margin-bottom: 10px;
+    line-height: 1.4;
+}
+
+section p:last-child {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.5;
+}
+
+section p:last-child::before {
+    content: counter(step) ". ";
+    counter-increment: step;
+    font-weight: bold;
+    color: #c72b5a;
+}
